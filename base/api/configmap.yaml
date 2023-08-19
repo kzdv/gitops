@@ -74,10 +74,7 @@ items:
           - RCA
         training_requests:
           enabled: true
-          discord:
-            training_staff: ""
-            scheduled: ""
-            show_all_scheduled: false
+          send_to_discord: false
           positions: []
           max_requests_per_user: 2
       session:
