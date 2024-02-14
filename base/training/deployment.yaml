@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: training
-        image: celeo/zdv-easy-appointments:latest
+        image: celeo/zdv-easy-appointments:c61987
         imagePullPolicy: Always
         envFrom:
         - secretRef:
