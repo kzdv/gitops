@@ -13,3 +13,7 @@ resources:
 - frontend/deployment.yaml
 - frontend/service.yaml
 - frontend/ingress.yaml
+- training/certificate.yaml
+- training/deployment.yaml
+- training/ingress.yaml
+- training/service.yaml
