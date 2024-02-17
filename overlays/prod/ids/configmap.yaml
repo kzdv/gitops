@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: ids-config
-  namespace: zan
+  namespace: zdv
 data:
   config.yaml: |
     cache:
@@ -26,7 +26,7 @@ data:
       CACert: "" # path to CA certificate for TLS connection
 
     facility:
-      identifier: ZAN # FAA Facility Identifier
+      identifier: ZDV # FAA Facility Identifier
       name: Anchorage ARTCC # Facility Name
       adh: # ADH Partnership configuration
         api_base: https://api.zdvartcc.org # Base URL for ADH API
