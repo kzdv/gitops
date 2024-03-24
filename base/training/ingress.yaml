@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-ingress
+  labels:
+    app: api
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: training.zdvartcc.org
+    http:
+      paths:
+      - backend:
+          service:
+            name: training-service
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - training.zdvartcc.org
+    secretName: training-denartcc-org-tls

@@ -14,3 +14,5 @@ patchesStrategicMerge:
 - api/merge/ingress.yaml
 - frontend/merge/certificate.yaml
 - frontend/merge/ingress.yaml
+- training/merge/certificate.yaml
+- training/merge/ingress.yaml

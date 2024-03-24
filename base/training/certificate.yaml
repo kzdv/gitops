@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: training-denartcc-org-tls
+spec:
+  dnsNames:
+  - training.zdvartcc.org
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt
+  secretName: training-denartcc-org-tls
